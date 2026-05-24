@@ -1,59 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nepal - Home</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>नेपाल — Discover Nepal</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<nav>
-<div>नेपाल 🇳🇵</div>
-<div>
-<a href="main.html">Home</a>
-<a href="culture.html">Culture</a>
-<a href="heritage.html">Heritage</a>
-<a href="food.html">Food</a>
+
+<div id="loader">
+  <div class="loader-dv">नेपाल</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
 </div>
+
+
+<style>
+  .hero .mandala-deco { top: 10%; right: 5%; width: 320px; }
+</style>
+
+
+<nav>
+  <a href="main.html" class="nav-logo">
+    <span class="devanagari">नेपाल</span>
+    <span class="latin">Discover Nepal</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="main.html" class="active">Home</a></li>
+    <li><a href="culture.html">Culture</a></li>
+    <li><a href="heritage.html">Heritage</a></li>
+    <li><a href="food.html">Food</a></li>
+    <li><a href="festival.html">Festivals</a></li>
+    <li><a href="landmarks.html">Landmarks</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
-<div class="hero">
-<h1>NEPAL</h1>
-<p>Land of Himalayas, Temples & Living Heritage</p>
-</div>
 
-<div class="flag-border"></div>
+<section class="hero">
+  <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1800&q=85');"></div>
+  <div class="hero-overlay"></div>
 
-<section class="section grid">
+ 
+  <div class="mandala-deco" style="top:8%; right:4%; width:280px; opacity:0.07;">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#C8922A" stroke-width="0.6">
+      <circle cx="100" cy="100" r="90"/><circle cx="100" cy="100" r="70"/><circle cx="100" cy="100" r="50"/><circle cx="100" cy="100" r="30"/>
+      <line x1="100" y1="10" x2="100" y2="190"/><line x1="10" y1="100" x2="190" y2="100"/>
+      <line x1="27" y1="27" x2="173" y2="173"/><line x1="173" y1="27" x2="27" y2="173"/>
+      <line x1="100" y1="10" x2="127" y2="58"/><line x1="100" y1="10" x2="73" y2="58"/>
+      <line x1="190" y1="100" x2="142" y2="127"/><line x1="190" y1="100" x2="142" y2="73"/>
+      <line x1="100" y1="190" x2="127" y2="142"/><line x1="100" y1="190" x2="73" y2="142"/>
+      <line x1="10" y1="100" x2="58" y2="127"/><line x1="10" y1="100" x2="58" y2="73"/>
+      <circle cx="100" cy="10" r="4" fill="#C8922A"/><circle cx="190" cy="100" r="4" fill="#C8922A"/>
+      <circle cx="100" cy="190" r="4" fill="#C8922A"/><circle cx="10" cy="100" r="4" fill="#C8922A"/>
+      <circle cx="100" cy="100" r="8" fill="none" stroke="#C8922A"/>
+    </svg>
+  </div>
 
-<div class="card">
-<div class="img-box">
-<img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1000">
-<span>Mount Everest Region</span>
-</div>
-</div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">The Roof of the World</p>
+    <h1 class="hero-devanagari">नेपाल</h1>
+    <h2 class="hero-title">Discover Nepal</h2>
+    <p class="hero-subtitle">Where the Himalayas touch the heavens and ancient traditions breathe in every temple, market, and mountain trail.</p>
+    <div class="hero-divider"></div>
+    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+      <a href="culture.html" class="btn-primary"><span>Explore Culture</span></a>
+      <a href="landmarks.html" class="btn-outline">See Landmarks</a>
+    </div>
+  </div>
 
-<div class="card">
-<div class="img-box">
-<img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1000">
-<span>Pokhara Lakeside</span>
-</div>
-</div>
-
-<div class="card">
-<div class="img-box">
-<img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=1000">
-<span>Pashupatinath Temple</span>
-</div>
-</div>
-
+  <div class="scroll-indicator">
+    <div class="line"></div>
+    <span>Scroll</span>
+  </div>
 </section>
 
+
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>नमस्ते</span><span class="dot">◆</span>
+    <span>Namaste</span><span class="dot">◆</span>
+    <span>हिमालय</span><span class="dot">◆</span>
+    <span>Himalayas</span><span class="dot">◆</span>
+    <span>संस्कृति</span><span class="dot">◆</span>
+    <span>Culture</span><span class="dot">◆</span>
+    <span>परम्परा</span><span class="dot">◆</span>
+    <span>Tradition</span><span class="dot">◆</span>
+    <span>दशैं</span><span class="dot">◆</span>
+    <span>Dashain</span><span class="dot">◆</span>
+    <span>धरोहर</span><span class="dot">◆</span>
+    <span>Heritage</span><span class="dot">◆</span>
+    <span>खाना</span><span class="dot">◆</span>
+    <span>Cuisine</span><span class="dot">◆</span>
+  </div>
+</div>
+
+
+<section style="background: var(--ivory); padding: 6rem 2rem;">
+  <div class="section-header">
+    <span class="section-tag reveal">Explore</span>
+    <span class="section-title-dv reveal">अन्वेषण गर्नुहोस्</span>
+    <h2 class="section-title reveal">The Many Faces<br>of Nepal</h2>
+    <div class="gold-rule reveal"></div>
+    <p class="section-subtitle reveal">From snow-capped peaks to steaming bowls of dal bhat — Nepal's richness unfolds across every page.</p>
+  </div>
+
+  <div class="cards-grid">
+   
+    <div class="card reveal reveal-delay-1">
+      <img class="card-img" data-src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=700&q=80" src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=40&q=10" alt="Culture" />
+      <div class="card-overlay"></div>
+      <div class="card-body">
+        <span class="card-tag">Explore</span>
+        <span class="card-dv">संस्कृति</span>
+        <h3 class="card-title">Culture</h3>
+        <p class="card-desc">Diverse traditions woven across 125 ethnic groups, 123 languages, and centuries of lived heritage.</p>
+        <a href="culture.html" class="card-arrow">Discover</a>
+      </div>
+    </div>
+
+   
+    <div class="card reveal reveal-delay-2">
+      <img class="card-img" data-src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=40&q=10" alt="Heritage" />
+      <div class="card-overlay"></div>
+      <div class="card-body">
+        <span class="card-tag">Explore</span>
+        <span class="card-dv">धरोहर</span>
+        <h3 class="card-title">Heritage</h3>
+        <p class="card-desc">Seven UNESCO World Heritage Sites tell Nepal's 2,000-year story in stone, brick, and gold.</p>
+        <a href="heritage.html" class="card-arrow">Discover</a>
+      </div>
+    </div>
+
+   
+    <div class="card reveal reveal-delay-3">
+      <img class="card-img" data-src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=700&q=80" src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=40&q=10" alt="Food" />
+      <div class="card-overlay"></div>
+      <div class="card-body">
+        <span class="card-tag">Explore</span>
+        <span class="card-dv">खाना</span>
+        <h3 class="card-title">Food</h3>
+        <p class="card-desc">From momos to sel roti — Nepali cuisine is bold, spiced, and deeply communal.</p>
+        <a href="food.html" class="card-arrow">Discover</a>
+      </div>
+    </div>
+
+    
+    <div class="card reveal reveal-delay-4">
+      <img class="card-img" data-src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=700&q=80" src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=40&q=10" alt="Festivals" />
+      <div class="card-overlay"></div>
+      <div class="card-body">
+        <span class="card-tag">Explore</span>
+        <span class="card-dv">चाडपर्व</span>
+        <h3 class="card-title">Festivals</h3>
+        <p class="card-desc">Over 50 celebrated festivals a year — Nepal's calendar is an endless procession of colour and devotion.</p>
+        <a href="festival.html" class="card-arrow">Discover</a>
+      </div>
+    </div>
+
+    
+    <div class="card reveal reveal-delay-5">
+      <img class="card-img" data-src="https://images.unsplash.com/photo-1585841432791-15d99920765c?w=700&q=80" src="https://images.unsplash.com/photo-1585841432791-15d99920765c?w=40&q=10" alt="Landmarks" />
+      <div class="card-overlay"></div>
+      <div class="card-body">
+        <span class="card-tag">Explore</span>
+        <span class="card-dv">स्थानहरू</span>
+        <h3 class="card-title">Landmarks</h3>
+        <p class="card-desc">Everest to Pokhara — Nepal's landscapes are the most dramatic on earth.</p>
+        <a href="landmarks.html" class="card-arrow">Discover</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="featured-strip">
+  <div class="strip-inner">
+    <div class="strip-text">
+      <span class="section-tag reveal">The Numbers</span>
+      <span class="section-title-dv reveal" style="color: var(--terra-lt);">तथ्याङ्क</span>
+      <h2 class="section-title reveal">Nepal in<br>Perspective</h2>
+      <div class="gold-rule reveal"></div>
+      <p class="section-subtitle reveal">A small country that holds 8 of the world's 14 highest peaks — and an even richer human story beneath them.</p>
+      <div class="stats-row">
+        <div class="stat-item reveal reveal-delay-1">
+          <span class="stat-num" data-count="8" data-suffix="">8</span>
+          <span class="stat-label">of the World's Highest Peaks</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <span class="stat-num" data-count="125" data-suffix="+">125+</span>
+          <span class="stat-label">Ethnic Groups</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <span class="stat-num" data-count="7" data-suffix="">7</span>
+          <span class="stat-label">UNESCO World Heritage Sites</span>
+        </div>
+      </div>
+    </div>
+    <div class="strip-image-side reveal">
+      <div class="strip-img-frame">
+        <img data-src="https://images.unsplash.com/photo-1549989476-69a92fa57c36?w=800&q=80" src="https://images.unsplash.com/photo-1549989476-69a92fa57c36?w=40&q=10" alt="Himalayan landscape" />
+        <div class="img-caption-tag">हिमालय — The Himalayas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section style="background: var(--charcoal-m); padding: 5rem 2rem;">
+  <div class="section-header" style="margin-bottom: 3rem;">
+    <span class="section-tag reveal" style="color: var(--terra-lt);">Gallery</span>
+    <span class="section-title-dv reveal" style="color: var(--gold-lt);">तस्वीरहरू</span>
+    <h2 class="section-title reveal" style="color: var(--ivory);">A Glimpse of Nepal</h2>
+  </div>
+  <div class="mosaic reveal">
+    <div class="mosaic-item">
+      <img data-src="https://images.unsplash.com/photo-1575423264916-e1fd69cbcb32?w=800&q=80" src="https://images.unsplash.com/photo-1575423264916-e1fd69cbcb32?w=40&q=10" alt="Pashupatinath" />
+      <div class="mosaic-caption">पशुपतिनाथ — Pashupatinath Temple</div>
+    </div>
+    <div class="mosaic-item">
+      <img data-src="https://images.unsplash.com/photo-1571996802847-dd6040eff7a2?w=600&q=80" src="https://images.unsplash.com/photo-1571996802847-dd6040eff7a2?w=40&q=10" alt="Momo" />
+      <div class="mosaic-caption">मःमः — Steamed Momo</div>
+    </div>
+    <div class="mosaic-item">
+      <img data-src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=600&q=80" src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=40&q=10" alt="Everest" />
+      <div class="mosaic-caption">सगरमाथा — Mount Everest</div>
+    </div>
+    <div class="mosaic-item">
+      <img data-src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=600&q=80" src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=40&q=10" alt="Traditional dress" />
+      <div class="mosaic-caption">परम्परागत पोशाक</div>
+    </div>
+    <div class="mosaic-item">
+      <img data-src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&q=80" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=40&q=10" alt="Prayer flags" />
+      <div class="mosaic-caption">लुङ्दार — Prayer Flags</div>
+    </div>
+  </div>
+</section>
+
+
+<div class="quote-block">
+  <p class="quote-text reveal">
+    <span class="dv">जहाँ हिमाल छ, त्यहाँ नेपाल छ।</span>
+    "Where there are Himalayas, there is Nepal."
+  </p>
+  <div class="gold-rule reveal"></div>
+  <span class="quote-attr reveal">Nepali Proverb</span>
+</div>
+
+
+<div class="flag-stripe"></div>
+
+
 <footer>
-Made for WebHack Hackathon 🇳🇵
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="main.html" class="nav-logo">
+        <span class="devanagari">नेपाल</span>
+        <span class="latin">Discover Nepal</span>
+      </a>
+      <p class="footer-tagline">A journey through the land of living traditions, sacred peaks, and ancient wisdom.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="festival.html">Festivals</a></li>
+        <li><a href="landmarks.html">Landmarks</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Regions</h4>
+      <ul>
+        <li><a href="#">Kathmandu Valley</a></li>
+        <li><a href="#">Pokhara</a></li>
+        <li><a href="#">Mustang</a></li>
+        <li><a href="#">Terai Plains</a></li>
+        <li><a href="#">Himalayas</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Language</a></li>
+        <li><a href="#">Religion</a></li>
+        <li><a href="#">Art & Craft</a></li>
+        <li><a href="#">Music</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2024 Discover Nepal — Cultural Heritage Project</span>
+    <span class="footer-dv">जय नेपाल</span>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

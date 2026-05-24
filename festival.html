@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>चाडपर्व — Festivals of Nepal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-dv">चाडपर्व</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<nav>
+  <a href="main.html" class="nav-logo">
+    <span class="devanagari">नेपाल</span>
+    <span class="latin">Discover Nepal</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="main.html">Home</a></li>
+    <li><a href="culture.html">Culture</a></li>
+    <li><a href="heritage.html">Heritage</a></li>
+    <li><a href="food.html">Food</a></li>
+    <li><a href="festival.html" class="active">Festivals</a></li>
+    <li><a href="landmarks.html">Landmarks</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1800&q=85');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="main.html">Home</a> <span>›</span> <span>Festivals</span>
+    </div>
+    <span class="page-title-dv">चाडपर्व</span>
+    <h1 class="page-title">Festivals of Nepal</h1>
+    <p class="page-tagline">More than 50 festivals a year — Nepal's calendar is a year-long celebration of devotion, community, and joy.</p>
+  </div>
+</div>
+
+
+<section style="background: var(--ivory); padding: 5rem 2rem;">
+  <div class="section-header">
+    <span class="section-tag reveal">Celebration</span>
+    <span class="section-title-dv reveal">उत्सव</span>
+    <h2 class="section-title reveal">A Nation that<br>Celebrates Every Season</h2>
+    <div class="gold-rule reveal"></div>
+    <p class="section-subtitle reveal">Nepal follows the ancient lunar Bikram Sambat calendar, meaning festivals shift each year. But they never stop — every month brings processions, feasts, lights, and music to the streets.</p>
+  </div>
+</section>
+
+
+<section style="background: var(--charcoal); padding: 5rem 2rem;">
+  <div class="section-header">
+    <span class="section-tag reveal" style="color: var(--terra-lt);">When to Go</span>
+    <span class="section-title-dv reveal" style="color: var(--gold-lt);">उत्सवको समय</span>
+    <h2 class="section-title reveal" style="color: var(--ivory);">Festival Calendar</h2>
+    <div class="gold-rule reveal"></div>
+  </div>
+
+  <div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 0;">
+
+    <style>
+      .timeline-item {
+        display: grid;
+        grid-template-columns: 100px 40px 1fr;
+        gap: 0 1.5rem;
+        align-items: start;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid rgba(200,146,42,0.12);
+        opacity: 0;
+        transform: translateX(-20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      .timeline-item.visible { opacity: 1; transform: translateX(0); }
+      .tl-month {
+        font-family: var(--font-ui);
+        font-size: 0.65rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--gold);
+        padding-top: 0.15rem;
+        text-align: right;
+      }
+      .tl-dot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+      .tl-dot::before {
+        content: '';
+        width: 10px; height: 10px;
+        background: var(--gold);
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-top: 0.25rem;
+      }
+      .tl-dot::after {
+        content: '';
+        width: 1px;
+        flex: 1;
+        min-height: 40px;
+        background: rgba(200,146,42,0.2);
+      }
+      .tl-content h4 {
+        font-family: var(--font-devanagari);
+        font-size: 1.1rem;
+        color: var(--gold-lt);
+        margin-bottom: 0.1rem;
+      }
+      .tl-content h3 {
+        font-family: var(--font-display);
+        font-size: 1.3rem;
+        color: var(--ivory);
+        margin-bottom: 0.4rem;
+      }
+      .tl-content p {
+        font-family: var(--font-body);
+        font-size: 0.95rem;
+        color: var(--warm-grey);
+        line-height: 1.7;
+      }
+    </style>
+
+    <div class="timeline-item reveal">
+      <div class="tl-month">Mar – Apr</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h4>होली</h4>
+        <h3>Holi — Festival of Colors</h3>
+        <p>The arrival of spring explodes in clouds of coloured powder and water across Nepal. Celebrated wildly in Kathmandu's Basantapur square, Holi marks the victory of good over evil and the end of winter.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal reveal-delay-1">
+      <div class="tl-month">Apr – May</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h4>बिस्केट जात्रा</h4>
+        <h3>Bisket Jatra — Nepali New Year</h3>
+        <p>Bhaktapur's most spectacular festival — two massive wooden chariots carrying the gods Bhairav and Bhadrakali are pulled through the city's narrow medieval streets in a tug of war between east and west.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal reveal-delay-2">
+      <div class="tl-month">Jul – Aug</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h4>इन्द्र जात्रा</h4>
+        <h3>Indra Jatra</h3>
+        <p>Kathmandu's eight-day street festival, honouring Indra, the god of rain. The Living Goddess Kumari is paraded through the old city on a golden chariot, while masked Mahakali and Kumari dances fill the nights.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal reveal-delay-3">
+      <div class="tl-month">Sep – Oct</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h4>दशैं</h4>
+        <h3>Dashain — The Greatest Festival</h3>
+        <p>Nepal's most important festival spans 15 days. Families gather from across the country; goats are sacrificed at Durga temples; elders place tika (a red paste mixed with yoghurt and rice) on the foreheads of the young as a blessing. The skies fill with kites.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal reveal-delay-1">
+      <div class="tl-month">Oct – Nov</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h4>तिहार</h4>
+        <h3>Tihar — Festival of Lights</h3>
+        <p>Nepal's answer to Diwali — five days of oil lamps, flower garlands, and reverence for crows, dogs, cows, oxen, and siblings. On the final day, sisters place tika on their brothers' foreheads in one of Hinduism's most tender rituals.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal reveal-delay-2">
+      <div class="tl-month">Nov – Dec</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h4>छठ पर्व</h4>
+        <h3>Chhath Puja</h3>
+        <p>Worshippers — particularly in the Terai — stand waist-deep in rivers at sunrise and sunset to offer prayers to the sun god Surya. The riverbanks become a vast living tapestry of orange, yellow, and devotion.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal reveal-delay-3">
+      <div class="tl-month">Dec – Jan</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h4>योमरी पुन्हि</h4>
+        <h3>Yomari Punhi</h3>
+        <p>A Newari harvest festival marking the end of the rice harvest — households make yomari (sweet rice-flour dumplings) and exchange them with neighbours. A warm, intimate festival that smells of ghee and new rice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="featured-strip">
+  <div class="strip-inner">
+    <div class="strip-text">
+      <span class="section-tag reveal" style="color: var(--terra-lt);">The Greatest</span>
+      <span class="section-title-dv reveal" style="color: var(--gold-lt);">दशैं</span>
+      <h2 class="section-title reveal" style="color: var(--ivory);">Dashain —<br>The Heart of Nepal</h2>
+      <div class="gold-rule reveal" style="margin-left:0;"></div>
+      <p class="section-subtitle reveal" style="color:rgba(250,243,224,0.65);">If you can only witness one Nepali festival, make it Dashain. For fifteen days, the entire nation comes alive with the sound of drums, the smell of marigolds, and the sight of generations reuniting under one roof.</p>
+      <div class="stats-row">
+        <div class="stat-item reveal reveal-delay-1">
+          <span class="stat-num" data-count="15" data-suffix="">15</span>
+          <span class="stat-label">Days of celebration</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <span class="stat-num">तिका</span>
+          <span class="stat-label">Sacred blessing from elders</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <span class="stat-num">जमरा</span>
+          <span class="stat-label">Sacred barley sprouts — a symbol of victory</span>
+        </div>
+      </div>
+    </div>
+    <div class="strip-image-side reveal">
+      <div class="strip-img-frame">
+        <img data-src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&q=80" src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=40&q=10" alt="Dashain festival" />
+        <div class="img-caption-tag">दशैं — Festival of Victory</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section style="background: var(--charcoal-m); padding: 5rem 2rem;">
+  <div class="two-col" style="max-width:1300px; margin:0 auto; align-items:center;">
+    <div class="content-image reveal">
+      <img data-src="https://images.unsplash.com/photo-1604881991720-f91add269bed?w=800&q=80" src="https://images.unsplash.com/photo-1604881991720-f91add269bed?w=40&q=10" alt="Tihar lights" />
+      <div class="image-accent" style="border-color:var(--gold-lt);"></div>
+    </div>
+    <div class="content-text reveal reveal-delay-2">
+      <span style="font-family:var(--font-ui); font-size:0.65rem; letter-spacing:0.3em; color:var(--gold); text-transform:uppercase; display:block; margin-bottom:0.5rem;">Festival of Lights</span>
+      <h3 style="color:var(--gold-lt);">तिहार</h3>
+      <h2 style="color:var(--ivory);">Tihar</h2>
+      <div class="gold-rule"></div>
+      <p style="color:rgba(250,243,224,0.75);">For five nights, Nepal glows. Every home outlines its windows and doors with tiny oil lamps (diyo), marigold garlands drape doorways, and the streets vibrate with the sound of young women singing deusi-bhailo — a tradition of door-to-door carolling in exchange for blessings and coins.</p>
+      <p style="color:rgba(250,243,224,0.75);">Tihar is also the festival that celebrates the bond between brothers and sisters. On the fifth day — Bhai Tika — sisters place an elaborate seven-coloured tika on their brothers' foreheads, promising lifelong protection in exchange for the same.</p>
+    </div>
+  </div>
+</section>
+
+
+<div class="quote-block">
+  <p class="quote-text reveal">
+    <span class="dv">चाड नभए जीवन सुन्दर हुँदैन।</span>
+    "Without festivals, life would not be beautiful."
+  </p>
+  <div class="gold-rule reveal"></div>
+  <span class="quote-attr reveal">Nepali Proverb</span>
+</div>
+
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="main.html" class="nav-logo">
+        <span class="devanagari">नेपाल</span>
+        <span class="latin">Discover Nepal</span>
+      </a>
+      <p class="footer-tagline">A journey through living traditions, sacred peaks, and ancient wisdom.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="festival.html">Festivals</a></li>
+        <li><a href="landmarks.html">Landmarks</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2024 Discover Nepal</span>
+    <span class="footer-dv">जय नेपाल</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

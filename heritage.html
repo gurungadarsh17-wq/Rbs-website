@@ -1,61 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Heritage - Nepal</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>धरोहर — Heritage of Nepal</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<nav>
-<div>Heritage</div>
-<div>
-<a href="main.html">Home</a>
-<a href="culture.html">Culture</a>
-<a href="food.html">Food</a>
+<div id="loader">
+  <div class="loader-dv">धरोहर</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
 </div>
+
+<nav>
+  <a href="main.html" class="nav-logo">
+    <span class="devanagari">नेपाल</span>
+    <span class="latin">Discover Nepal</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="main.html">Home</a></li>
+    <li><a href="culture.html">Culture</a></li>
+    <li><a href="heritage.html" class="active">Heritage</a></li>
+    <li><a href="food.html">Food</a></li>
+    <li><a href="festival.html">Festivals</a></li>
+    <li><a href="landmarks.html">Landmarks</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
-<div class="hero">
-<h1>HERITAGE</h1>
-<p>UNESCO World Heritage Sites</p>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=85');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="main.html">Home</a> <span>›</span> <span>Heritage</span>
+    </div>
+    <span class="page-title-dv">धरोहर</span>
+    <h1 class="page-title">Heritage Sites</h1>
+    <p class="page-tagline">Seven UNESCO World Heritage Sites — each a testament to two thousand years of Nepali civilisation.</p>
+  </div>
 </div>
 
-<div class="flag-border"></div>
 
-<section class="section grid">
-
-<div class="card">
-<div class="img-box">
-<img src="https://images.unsplash.com/photo-1589182337358-2cb63099350c?w=1000">
-<span>Swayambhunath Stupa</span>
-</div>
-</div>
-
-<div class="card">
-<div class="img-box">
-<img src="https://images.unsplash.com/photo-1609947017230-9d1a8a8a0c5a?w=1000">
-<span>Kathmandu Durbar Square</span>
-</div>
-</div>
-
-<div class="card">
-<div class="img-box">
-<img src="https://images.unsplash.com/photo-1609921212029-bb6c3f6f2d9c?w=1000">
-<span>Lumbini - Birthplace of Buddha</span>
-</div>
-</div>
-
-<div class="card">
-<div class="img-box">
-<img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1000">
-<span>Bhaktapur City</span>
-</div>
-</div>
-
+<section style="background: var(--ivory); padding: 5rem 2rem;">
+  <div class="section-header">
+    <span class="section-tag reveal">UNESCO</span>
+    <span class="section-title-dv reveal">विश्व सम्पदा</span>
+    <h2 class="section-title reveal">World Heritage<br>of Nepal</h2>
+    <div class="gold-rule reveal"></div>
+    <p class="section-subtitle reveal">Within the Kathmandu Valley alone, seven monuments of exceptional universal value were inscribed by UNESCO in 1979 — an unparalleled concentration of sacred architecture and urban heritage.</p>
+  </div>
 </section>
 
+
+<section style="background: var(--ivory-dk); padding: 0 2rem 5rem;">
+
+
+  <div class="content-section" style="padding-top:0;">
+    <div class="two-col" style="padding-top: 4rem; border-top: 1px solid rgba(200,146,42,0.2);">
+      <div class="content-image reveal">
+        <img data-src="https://images.unsplash.com/photo-1575423264916-e1fd69cbcb32?w=800&q=80" src="https://images.unsplash.com/photo-1575423264916-e1fd69cbcb32?w=40&q=10" alt="Pashupatinath" />
+        <div class="image-accent"></div>
+      </div>
+      <div class="content-text reveal reveal-delay-2">
+        <span style="font-family:var(--font-ui); font-size:0.65rem; letter-spacing:0.3em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:0.5rem;">UNESCO — Hindu Sacred Site</span>
+        <h3>पशुपतिनाथ</h3>
+        <h2>Pashupatinath Temple</h2>
+        <div class="gold-rule"></div>
+        <p>The most sacred Hindu temple in Nepal — dedicated to Pashupati, an aspect of Shiva — sits on the banks of the holy Bagmati River. Dating to the 5th century CE, it is one of the subcontinent's most important pilgrimage destinations, with funeral ghats that serve as a constant, moving reminder of life's cycles.</p>
+        <p>Only Hindus may enter the main temple complex, but from the opposite bank, all can witness the ancient rhythm of prayer, cremation, and river-bathing that has continued unbroken for millennia.</p>
+        <div style="display:flex; gap:1.5rem; margin-top:1.5rem;">
+          <div style="text-align:left;">
+            <div style="font-family:var(--font-display); font-size:1.8rem; color:var(--crimson);">5th C.</div>
+            <div style="font-family:var(--font-ui); font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--warm-grey);">Founded</div>
+          </div>
+          <div style="text-align:left;">
+            <div style="font-family:var(--font-display); font-size:1.8rem; color:var(--crimson);">1979</div>
+            <div style="font-family:var(--font-ui); font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--warm-grey);">UNESCO Listed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="two-col reverse" style="padding-top: 4rem; margin-top: 4rem; border-top: 1px solid rgba(200,146,42,0.2);">
+      <div class="content-image reveal">
+        <img data-src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800&q=80" src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=40&q=10" alt="Boudhanath" />
+        <div class="image-accent" style="border-color: var(--teal);"></div>
+      </div>
+      <div class="content-text reveal reveal-delay-2">
+        <span style="font-family:var(--font-ui); font-size:0.65rem; letter-spacing:0.3em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:0.5rem;">UNESCO — Buddhist Sacred Site</span>
+        <h3>बौद्धनाथ</h3>
+        <h2>Boudhanath Stupa</h2>
+        <div class="gold-rule"></div>
+        <p>One of the largest stupas in the world, Boudhanath is the heart of Tibetan Buddhist Nepal. Its all-seeing eyes of the Buddha gaze out across a mandala-shaped complex that draws Tibetan pilgrims, monks, and meditation seekers from across Asia.</p>
+        <p>The evening kora — the circumambulation of the stupa — where hundreds of devotees spin prayer wheels and chant mantras in the amber glow, is one of Nepal's most transcendent experiences.</p>
+        <div style="display:flex; gap:1.5rem; margin-top:1.5rem;">
+          <div>
+            <div style="font-family:var(--font-display); font-size:1.8rem; color:var(--teal);">5th C.</div>
+            <div style="font-family:var(--font-ui); font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--warm-grey);">Founded</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-display); font-size:1.8rem; color:var(--teal);">36m</div>
+            <div style="font-family:var(--font-ui); font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--warm-grey);">Height</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+    <div class="two-col" style="padding-top: 4rem; margin-top: 4rem; border-top: 1px solid rgba(200,146,42,0.2);">
+      <div class="content-image reveal">
+        <img data-src="https://images.unsplash.com/photo-1546961342-ea5f62d5a27b?w=800&q=80" src="https://images.unsplash.com/photo-1546961342-ea5f62d5a27b?w=40&q=10" alt="Swayambhunath" />
+        <div class="image-accent" style="border-color: var(--gold);"></div>
+      </div>
+      <div class="content-text reveal reveal-delay-2">
+        <span style="font-family:var(--font-ui); font-size:0.65rem; letter-spacing:0.3em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:0.5rem;">UNESCO — Ancient Stupa Complex</span>
+        <h3>स्वयम्भूनाथ</h3>
+        <h2>Swayambhunath Stupa</h2>
+        <div class="gold-rule"></div>
+        <p>Perched atop a hill above Kathmandu, the Swayambhunath complex — lovingly called the Monkey Temple — is over 2,500 years old. The gilded spire, hung with prayer flags, watches over the valley from all directions.</p>
+        <p>Ancient texts claim the valley was once a great lake, and Swayambhunath rose from a lotus that bloomed at its centre. Pilgrims who climb the 365 steps to its summit are rewarded with panoramic views and a complex of shrines sacred to both Hindus and Buddhists.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section style="background: var(--charcoal); padding: 5rem 2rem;">
+  <div class="section-header">
+    <span class="section-tag reveal" style="color: var(--terra-lt);">More Sites</span>
+    <span class="section-title-dv reveal" style="color: var(--gold-lt);">अन्य सम्पदाहरू</span>
+    <h2 class="section-title reveal" style="color: var(--ivory);">More UNESCO<br>World Heritage Sites</h2>
+  </div>
+
+  <div class="item-grid" style="max-width:1300px; margin:0 auto;">
+    <div class="item-card reveal reveal-delay-1" style="background:var(--charcoal-m); border:1px solid rgba(200,146,42,0.15);">
+      <img class="item-card-img" data-src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80" src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=40&q=10" alt="Patan Durbar Square" />
+      <div class="item-card-body">
+        <span class="item-card-tag">Ancient City</span>
+        <span class="item-card-dv" style="color:var(--gold-lt);">ललितपुर</span>
+        <h3 class="item-card-title" style="color:var(--ivory);">Patan Durbar Square</h3>
+        <p class="item-card-desc" style="color:var(--warm-grey);">The city of Lalitpur (Patan) preserves the most refined examples of Newari architecture — royal courtyards, pagoda temples, and a living museum of medieval urban life.</p>
+      </div>
+    </div>
+
+    <div class="item-card reveal reveal-delay-2" style="background:var(--charcoal-m); border:1px solid rgba(200,146,42,0.15);">
+      <img class="item-card-img" data-src="https://images.unsplash.com/photo-1587974718822-ef21ecdb6e8b?w=600&q=80" src="https://images.unsplash.com/photo-1587974718822-ef21ecdb6e8b?w=40&q=10" alt="Bhaktapur" />
+      <div class="item-card-body">
+        <span class="item-card-tag">Medieval City</span>
+        <span class="item-card-dv" style="color:var(--gold-lt);">भक्तपुर</span>
+        <h3 class="item-card-title" style="color:var(--ivory);">Bhaktapur Durbar Square</h3>
+        <p class="item-card-desc" style="color:var(--warm-grey);">The best-preserved of the three Durbar Squares, Bhaktapur feels frozen in the 15th century — its 55-Window Palace, pottery squares, and terracotta-brick streets intact and living.</p>
+      </div>
+    </div>
+
+    <div class="item-card reveal reveal-delay-3" style="background:var(--charcoal-m); border:1px solid rgba(200,146,42,0.15);">
+      <img class="item-card-img" data-src="https://images.unsplash.com/photo-1624288423719-ded0aa7eeaee?w=600&q=80" src="https://images.unsplash.com/photo-1624288423719-ded0aa7eeaee?w=40&q=10" alt="Lumbini" />
+      <div class="item-card-body">
+        <span class="item-card-tag">Sacred Birthplace</span>
+        <span class="item-card-dv" style="color:var(--gold-lt);">लुम्बिनी</span>
+        <h3 class="item-card-title" style="color:var(--ivory);">Lumbini — Birthplace of Buddha</h3>
+        <p class="item-card-desc" style="color:var(--warm-grey);">In the southwestern Terai, Lumbini is one of the holiest places in the world — the exact birthplace of Siddhartha Gautama, who became the Buddha, around 563 BCE.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="quote-block">
+  <p class="quote-text reveal">
+    <span class="dv">पुरानो इँटाले नयाँ कथा भन्छ।</span>
+    "Ancient bricks tell new stories."
+  </p>
+  <div class="gold-rule reveal"></div>
+  <span class="quote-attr reveal">On Nepal's Heritage</span>
+</div>
+
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="main.html" class="nav-logo">
+        <span class="devanagari">नेपाल</span>
+        <span class="latin">Discover Nepal</span>
+      </a>
+      <p class="footer-tagline">A journey through living traditions, sacred peaks, and ancient wisdom.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="festival.html">Festivals</a></li>
+        <li><a href="landmarks.html">Landmarks</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2024 Discover Nepal</span>
+    <span class="footer-dv">जय नेपाल</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

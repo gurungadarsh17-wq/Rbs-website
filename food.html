@@ -1,54 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Food - Nepal</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>खाना — Food of Nepal</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<nav>
-<div>Food</div>
-<div>
-<a href="main.html">Home</a>
-<a href="culture.html">Culture</a>
-<a href="heritage.html">Heritage</a>
+<div id="loader">
+  <div class="loader-dv">खाना</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
 </div>
+
+<nav>
+  <a href="main.html" class="nav-logo">
+    <span class="devanagari">नेपाल</span>
+    <span class="latin">Discover Nepal</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="main.html">Home</a></li>
+    <li><a href="culture.html">Culture</a></li>
+    <li><a href="heritage.html">Heritage</a></li>
+    <li><a href="food.html" class="active">Food</a></li>
+    <li><a href="festival.html">Festivals</a></li>
+    <li><a href="landmarks.html">Landmarks</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
-<div class="hero">
-<h1>FOOD</h1>
-<p>Flavors of the Himalayas</p>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1800&q=85'); background-position: center 60%;"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="main.html">Home</a> <span>›</span> <span>Food</span>
+    </div>
+    <span class="page-title-dv">खाना</span>
+    <h1 class="page-title">Nepali Cuisine</h1>
+    <p class="page-tagline">Bold spices, mountain-fresh ingredients, and recipes passed down through generations of community kitchens.</p>
+  </div>
 </div>
 
-<div class="flag-border"></div>
 
-<section class="section grid">
-
-<div class="card">
-<div class="img-box">
-<img src="https://images.unsplash.com/photo-1604908177522-040a7f3b8a2c?w=1000">
-<span>Dal Bhat</span>
-</div>
-</div>
-
-<div class="card">
-<div class="img-box">
-<img src="https://images.unsplash.com/photo-1625944525533-473e6b40c5f4?w=1000">
-<span>Momo</span>
-</div>
-</div>
-
-<div class="card">
-<div class="img-box">
-<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=1000">
-<span>Sel Roti</span>
-</div>
-</div>
-
+<section style="background: var(--ivory);">
+  <div class="content-section" style="padding-top: 5rem; padding-bottom: 4rem;">
+    <div class="two-col">
+      <div class="content-text reveal">
+        <h3>नेपाली खाना</h3>
+        <h2>Food as a<br>Way of Life</h2>
+        <div class="gold-rule"></div>
+        <p>In Nepal, food is inseparable from identity, season, and spirituality. The iconic Dal Bhat — lentil soup, steamed rice, vegetable curry, and pickles — is eaten twice daily by most Nepalis, and considered a complete meal in itself. "Dal Bhat power — 24 hour!" as trekkers and locals alike say.</p>
+        <p>But Nepali cuisine extends far beyond this staple. Influenced by India to the south and Tibet to the north, it has developed its own distinct character: warming, wholesome, aromatic, and deeply communal. Food here is always shared.</p>
+        <p>Altitude shapes the menu dramatically — from the tropical Terai's fresh fish and mustard greens, to the alpine kitchens of the high Himalayas where tsampa (roasted barley flour) and butter tea keep bodies warm against the cold.</p>
+      </div>
+      <div class="content-image reveal reveal-delay-2">
+        <img data-src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&q=80" src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=40&q=10" alt="Dal Bhat" />
+        <div class="image-accent" style="border-color: var(--terracotta);"></div>
+      </div>
+    </div>
+  </div>
 </section>
 
+
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>दाल भात</span><span class="dot">◆</span>
+    <span>Dal Bhat</span><span class="dot">◆</span>
+    <span>मःमः</span><span class="dot">◆</span>
+    <span>Momo</span><span class="dot">◆</span>
+    <span>सेल रोटी</span><span class="dot">◆</span>
+    <span>Sel Roti</span><span class="dot">◆</span>
+    <span>ढिंडो</span><span class="dot">◆</span>
+    <span>Dhindo</span><span class="dot">◆</span>
+    <span>चटपटे</span><span class="dot">◆</span>
+    <span>Chatpate</span><span class="dot">◆</span>
+    <span>याक चिज</span><span class="dot">◆</span>
+    <span>Yak Cheese</span><span class="dot">◆</span>
+  </div>
+</div>
+
+
+<section style="background: var(--ivory-dk); padding: 5rem 2rem;">
+  <div class="section-header">
+    <span class="section-tag reveal">Must Try</span>
+    <span class="section-title-dv reveal">परम्परागत परिकार</span>
+    <h2 class="section-title reveal">Iconic Dishes</h2>
+    <div class="gold-rule reveal"></div>
+    <p class="section-subtitle reveal">Each dish tells a story of geography, history, and the warmth of Nepali hospitality.</p>
+  </div>
+
+  <div class="item-grid">
+    <div class="item-card reveal reveal-delay-1">
+      <img class="item-card-img" data-src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80" src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=40&q=10" alt="Dal Bhat" />
+      <div class="item-card-body">
+        <span class="item-card-tag">National Staple</span>
+        <span class="item-card-dv">दाल भात तरकारी</span>
+        <h3 class="item-card-title">Dal Bhat</h3>
+        <p class="item-card-desc">The cornerstone of Nepali eating: lentil soup (dal), steamed rice (bhat), seasonal vegetable curry (tarkari), and tangy pickle (achar). Eaten morning and evening, it is Nepal's most complete and beloved meal.</p>
+      </div>
+    </div>
+
+    <div class="item-card reveal reveal-delay-2">
+      <img class="item-card-img" data-src="https://images.unsplash.com/photo-1571996802847-dd6040eff7a2?w=600&q=80" src="https://images.unsplash.com/photo-1571996802847-dd6040eff7a2?w=40&q=10" alt="Momo" />
+      <div class="item-card-body">
+        <span class="item-card-tag">Street Food Icon</span>
+        <span class="item-card-dv">मःमः</span>
+        <h3 class="item-card-title">Momo</h3>
+        <p class="item-card-desc">Nepal's most beloved street food — steamed or fried dumplings filled with minced meat or vegetables, spiced with ginger, garlic, and cumin. Served with fiery tomato-sesame achar, momos are eaten at every hour of day.</p>
+      </div>
+    </div>
+
+    <div class="item-card reveal reveal-delay-3">
+      <img class="item-card-img" data-src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=40&q=10" alt="Sel Roti" />
+      <div class="item-card-body">
+        <span class="item-card-tag">Festival Bread</span>
+        <span class="item-card-dv">सेल रोटी</span>
+        <h3 class="item-card-title">Sel Roti</h3>
+        <p class="item-card-desc">A crispy, sweet, ring-shaped rice-flour bread deep-fried in ghee. Sel roti is inseparable from Nepali festivals — particularly Dashain and Tihar — when every household fills with its warm, sweet aroma.</p>
+      </div>
+    </div>
+
+    <div class="item-card reveal reveal-delay-1">
+      <img class="item-card-img" data-src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=600&q=80" src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=40&q=10" alt="Dhindo" />
+      <div class="item-card-body">
+        <span class="item-card-tag">Highland Staple</span>
+        <span class="item-card-dv">ढिंडो</span>
+        <h3 class="item-card-title">Dhindo</h3>
+        <p class="item-card-desc">A thick porridge made by stirring buckwheat or millet flour into boiling water — the traditional staple of hill and mountain communities. Eaten with gundruk (fermented greens) and butter, it is deeply nourishing.</p>
+      </div>
+    </div>
+
+    <div class="item-card reveal reveal-delay-2">
+      <img class="item-card-img" data-src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80" src="https://images.unsplash.com/photo-1547592180-85f173990554?w=40&q=10" alt="Thukpa" />
+      <div class="item-card-body">
+        <span class="item-card-tag">Mountain Warmth</span>
+        <span class="item-card-dv">थुक्पा</span>
+        <h3 class="item-card-title">Thukpa</h3>
+        <p class="item-card-desc">A hearty Tibetan-influenced noodle soup that warms trekkers and highlanders alike. Packed with vegetables, meat, and warming spices, thukpa is the comfort food of Nepal's mountain lodges.</p>
+      </div>
+    </div>
+
+    <div class="item-card reveal reveal-delay-3">
+      <img class="item-card-img" data-src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600&q=80" src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=40&q=10" alt="Yomari" />
+      <div class="item-card-body">
+        <span class="item-card-tag">Newari Delicacy</span>
+        <span class="item-card-dv">योमरी</span>
+        <h3 class="item-card-title">Yomari</h3>
+        <p class="item-card-desc">A steamed rice-flour dumpling with a sweet filling of chaku (molasses) and sesame, shaped like a fig. Central to the Newari festival of Yomari Punhi — these are made to mark the new rice harvest each winter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="featured-strip">
+  <div class="strip-inner">
+    <div class="strip-text">
+      <span class="section-tag reveal" style="color: var(--terra-lt);">Drinks</span>
+      <span class="section-title-dv reveal" style="color: var(--gold-lt);">पेय पदार्थ</span>
+      <h2 class="section-title reveal" style="color: var(--ivory);">Drinks &<br>Beverages</h2>
+      <div class="gold-rule reveal" style="margin-left:0;"></div>
+      <p class="section-subtitle reveal" style="color:rgba(250,243,224,0.65);">From butter tea in the mountains to tongba on a cold Ilam evening — Nepal's drinks are as diverse as its landscapes.</p>
+      <div class="stats-row">
+        <div class="stat-item reveal reveal-delay-1">
+          <span class="stat-num">चिया</span>
+          <span class="stat-label">Masala Milk Tea — a daily ritual</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <span class="stat-num">छ्याङ</span>
+          <span class="stat-label">Traditional rice beer brewed at home</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <span class="stat-num">टोङ्बा</span>
+          <span class="stat-label">Hot millet beer from the east hills</span>
+        </div>
+      </div>
+    </div>
+    <div class="strip-image-side reveal">
+      <div class="strip-img-frame">
+        <img data-src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80" src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=40&q=10" alt="Nepali tea" />
+        <div class="img-caption-tag">चिया — Nepali Masala Chai</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="quote-block">
+  <p class="quote-text reveal">
+    <span class="dv">दाल भात पावर — चौबीस घण्टा!</span>
+    "Dal Bhat power — twenty-four hours!"
+  </p>
+  <div class="gold-rule reveal"></div>
+  <span class="quote-attr reveal">Beloved Nepali Saying</span>
+</div>
+
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="main.html" class="nav-logo">
+        <span class="devanagari">नेपाल</span>
+        <span class="latin">Discover Nepal</span>
+      </a>
+      <p class="footer-tagline">A journey through living traditions, sacred peaks, and ancient wisdom.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="festival.html">Festivals</a></li>
+        <li><a href="landmarks.html">Landmarks</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2024 Discover Nepal</span>
+    <span class="footer-dv">जय नेपाल</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

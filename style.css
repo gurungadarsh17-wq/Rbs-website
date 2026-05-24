@@ -1,66 +1,98 @@
+body{
+margin:0;
+font-family:Georgia, serif;
+background:#120804;
+color:#F5E6C8;
+}
 
-img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:10px;
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:18px 40px;
+background:linear-gradient(90deg,#DC143C,#003893);
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+margin-left:15px;
+text-decoration:none;
+font-family:sans-serif;
 }
 
 
 .hero{
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-
-  background:
-  linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)),
-  url("https://images.unsplash.com/photo-1605640840605-14ac1855827b?q=80&w=2000") center/cover no-repeat;
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1500") center/cover;
 }
 
-
-.card{
-  background:rgba(255,255,255,0.05);
-  padding:15px;
-  border-radius:12px;
-  overflow:hidden;
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:scale(1.03);
-}
-
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-}
-
-
-.img-box{
-  position:relative;
-  height:200px;
-  overflow:hidden;
-  border-radius:12px;
-}
-
-.img-box span{
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
-  padding:10px;
-  background:linear-gradient(transparent, rgba(0,0,0,0.8));
-  color:white;
-  font-weight:bold;
+.hero h1{
+font-size:5rem;
+color:#FFD700;
+letter-spacing:4px;
 }
 
 
 .flag-border{
-  height:12px;
-  background:linear-gradient(90deg,#DC143C,#003893,#FFD700,#003893,#DC143C);
+height:12px;
+background:linear-gradient(90deg,#DC143C,#003893,#FFD700,#003893,#DC143C);
+}
+
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+padding:50px;
+}
+
+
+.card{
+border-radius:12px;
+overflow:hidden;
+background:rgba(255,255,255,0.05);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.04);
+}
+
+
+.img-box{
+position:relative;
+height:220px;
+}
+
+.img-box img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.img-box span{
+position:absolute;
+bottom:0;
+width:100%;
+padding:10px;
+background:linear-gradient(transparent,rgba(0,0,0,0.8));
+color:white;
+font-weight:bold;
+}
+
+
+footer{
+text-align:center;
+padding:30px;
+background:#DC143C;
+color:white;
 }
